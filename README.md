@@ -43,6 +43,7 @@ Windowsの場合は公式サイト [https://ffmpeg.org/](https://ffmpeg.org/) �
 pip を使って導入します。
 
     pip uninstall ffmpeg
+
     pip install git+https://github.com/tantanGH/pngdeband.git
 
 `ffmpeg` というライブラリをアンインストールする必要があります。非常に紛らわしいですが、このライブラリは使えません。
