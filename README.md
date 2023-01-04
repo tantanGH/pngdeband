@@ -1,15 +1,17 @@
 # pngdeband
-24bit PNG to 15bit PNG converter with de-banding filter in Python
+24bit/32bit PNG to 15bit PNG converter with de-banding filter in Python
 
-24bit color RGB/RGBA の PNG ファイルを X680x0 で表示するのに適した 15bit color の PNG に変換します。
-この時、単純に RGB 各 8bit の下位 3bit を落として 24bit から 15bit に変換してしまうと、画像の平坦かつ明暗差がある部分で band(マッハバンド)がすごく目立ちます。これを防ぐために debanding (マッハバンド除去) をしつつ 15bit に変換し、新たな PNG ファイルとして出力します。
+24bit/32bit RGB/RGBA の PNG ファイルを X680x0 で表示するのに適した 15bit color の PNG に変換します。
+この時、単純に RGB 各 8bit の下位 3bit を落として 24bit から 15bit に変換してしまうと、
+画像の中で平坦かつ明暗差がある部分で band(マッハバンド)がすごく目立ちます。
+これを防ぐために debanding (マッハバンド除去) をしつつ 15bit に変換し、新たな PNG ファイルとして出力します。
 
 PNG ファイルはその仕様上 15bit のビット深度はサポートされていませんので 24bit RGB PNG として出力しますが、
 使われているカラーは 15bit 分のみ、下位3bitはすべて0になっています。
 
 ---
 
-### ffmpeg のインストール (Windows)
+### 準備: ffmpeg のインストール (Windows)
 
 インストールにあたっては、オープンソースの動画処理コマンドラインツール `ffmpeg` の導入が必要になります。
 
@@ -28,7 +30,7 @@ Windowsの場合は公式サイト [https://ffmpeg.org/](https://ffmpeg.org/) �
 
 ---
 
-### ffmpeg のインストール (MacOS)
+### 準備: ffmpeg のインストール (macOS)
 
     brew install ffmpeg
 
