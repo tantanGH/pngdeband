@@ -1,11 +1,8 @@
 # pngdeband
-24bit PNG to 15bit PNG converter with de-banding filter
-
-Python で書かれた PNG 画像 de-banding フィルタツールです。
+24bit PNG to 15bit PNG converter with de-banding filter in Python
 
 24bit color RGB/RGBA の PNG ファイルを X680x0 で表示するのに適した 15bit color の PNG に変換します。
-この時、単純に RGB 各 8bit の下位 3bit を落として 24bit から 15bit に変換してしまうと、バンド(マッハバンド)がすごく目立ちます。
-これを防ぐために debanding (バンド除去) フィルターをかけつつ 15bit に変換し、新たな PNG ファイルとして出力します。
+この時、単純に RGB 各 8bit の下位 3bit を落として 24bit から 15bit に変換してしまうと、画像の平坦かつ明暗差がある部分で band(マッハバンド)がすごく目立ちます。これを防ぐために debanding (マッハバンド除去) をしつつ 15bit に変換し、新たな PNG ファイルとして出力します。
 
 PNG ファイルはその仕様上 15bit/16bit のビット深度はサポートされていませんので 24bit RGB PNG として出力しますが、
 使われているカラーは 15bit 分のみ、下位3bitはすべて0になっています。
