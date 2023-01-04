@@ -59,9 +59,9 @@ pip を使って導入します。
 
     options:
       -h, --help                        ... ヘルプメッセージの表示
-      -r RESIZE, --resize RESIZE        ... 画像を縮小する際の大きさをパーセントで指定
       -x WIDTH, --width WIDTH           ... 画像を縮小する際の幅をピクセルで指定 height の指定がないと元アスペクト比が維持されます
       -y HEIGHT, --height HEIGHT        ... 画像を縮小する際の高さをピクセルで指定 width の指定がないと元アスペクト比が維持されます
+      -r RESIZE, --resize RESIZE        ... 画像を縮小する際の大きさをパーセントで指定 (-x,-yがあればそちらが優先されます)
       -t1 THRESHOLD1, --threshold1 THRESHOLD1
                         debanding detection threshold for channel 1 (default:0.02)
       -t2 THRESHOLD2, --threshold2 THRESHOLD2

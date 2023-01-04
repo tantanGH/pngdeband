@@ -62,9 +62,9 @@ def main():
 
     parser.add_argument("infile",help="input PNG file")
     parser.add_argument("outfile",help="output PNG file")
-    parser.add_argument("-r","--resize",help="resize percent",type=int)
     parser.add_argument("-x","--width",help="resize width",type=int)
     parser.add_argument("-y","--height",help="resize height",type=int)
+    parser.add_argument("-r","--resize",help="resize percent",type=int)
     parser.add_argument("-t1","--threshold1",help="band detection threshold for channel 1 (0.00003 to 0.5, default:0.02)",default=0.02)
     parser.add_argument("-t2","--threshold2",help="band detection threshold for channel 2 (0.00003 to 0.5, default:0.02)",default=0.02)
     parser.add_argument("-t3","--threshold3",help="band detection threshold for channel 3 (0.00003 to 0.5, default:0.02)",default=0.02)
