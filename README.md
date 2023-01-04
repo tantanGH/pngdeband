@@ -4,15 +4,14 @@
 24bit color RGB/RGBA の PNG ファイルを X680x0 で表示するのに適した 15bit color の PNG に変換します。
 この時、単純に RGB 各 8bit の下位 3bit を落として 24bit から 15bit に変換してしまうと、画像の平坦かつ明暗差がある部分で band(マッハバンド)がすごく目立ちます。これを防ぐために debanding (マッハバンド除去) をしつつ 15bit に変換し、新たな PNG ファイルとして出力します。
 
-PNG ファイルはその仕様上 15bit/16bit のビット深度はサポートされていませんので 24bit RGB PNG として出力しますが、
+PNG ファイルはその仕様上 15bit のビット深度はサポートされていませんので 24bit RGB PNG として出力しますが、
 使われているカラーは 15bit 分のみ、下位3bitはすべて0になっています。
 
 ---
 
-### ffmpeg のインストール
+### ffmpeg のインストール (Windows)
 
-インストールにあたっては、オープンソースの動画フィルタコマンドラインツール `ffmpeg` の導入が必要になります。
-やや大きめの規模のソフトウェアになりますので注意してください。
+インストールにあたっては、オープンソースの動画処理コマンドラインツール `ffmpeg` の導入が必要になります。
 
 Windowsの場合は公式サイト [https://ffmpeg.org/](https://ffmpeg.org/) に行き、Get packages & executable files を選びます。
 
@@ -27,7 +26,9 @@ Windowsの場合は公式サイト [https://ffmpeg.org/](https://ffmpeg.org/) �
 
 ググると詳細な導入説明サイトが沢山ありますので、それらも参考にしてください。
 
-macOSの場合は
+---
+
+### ffmpeg のインストール (MacOS)
 
     brew install ffmpeg
 
@@ -36,6 +37,8 @@ macOSの場合は
 ---
 
 ### pngdeband のインストール
+
+pip を使って導入します。
 
     pip install git+https://github.com/tantanGH/pngdeband.git
 
@@ -49,5 +52,38 @@ macOSの場合は
 
 ---
 
-### 変換例
+### 変換例1
 
+変換前の24bitPNGをdeband処理なしで15bit表示したもの
+
+![](images/sample1.png)
+
+deband処理して15bit表示したもの
+
+![](images/sample1d.png)
+
+---
+
+### 変換例2
+
+変換前の24bitPNGをdeband処理なしで15bit表示したもの
+
+![](images/sample2.png)
+
+deband処理して15bit表示したもの
+
+![](images/sample2d.png)
+
+---
+
+### 変換例3
+
+変換前の24bitPNGをdeband処理なしで15bit表示したもの
+
+![](images/sample3.png)
+
+deband処理して15bit表示したもの
+
+![](images/sample3d.png)
+
+--
