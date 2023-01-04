@@ -130,6 +130,15 @@ deband処理して15bit表示したもの。
 
 ![](images/sample3d.png)
 
----
 
 サンプル画像はすべて NovelAI にて当方が作成したものになります。
+
+
+---
+
+NOTIFICATION
+
+This software is relying on the below awesome softwares. Thanks.
+
+* FFmpeg - A complete, cross-platform solution to record, convert and stream audio and video. https://ffmpeg.org/
+* Python bindings for FFmpeg - with complex filtering support https://github.com/kkroening/ffmpeg-python
