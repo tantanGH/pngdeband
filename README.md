@@ -131,8 +131,6 @@ deband処理して15bit表示したもの。
 ![](images/sample3d.png)
 
 
-サンプル画像はすべて NovelAI にて当方が作成したものになります。
-
 
 ---
 
