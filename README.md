@@ -46,7 +46,7 @@ pip を使って導入します。
 
     pip install git+https://github.com/tantanGH/pngdeband.git
 
-`ffmpeg` というライブラリをアンインストールする必要があります。非常に紛らわしいですが、このライブラリは使えません。
+`ffmpeg` というライブラリがもし入っていたい場合、これをアンインストールする必要があります。非常に紛らわしいですが、このライブラリは使えません。
 `pngdeband` をインストールすると `ffmpeg-python` という本来のラッパーライブラリが導入されます。
 
 [Windowsユーザ向けPython導入ガイド](https://github.com/tantanGH/distribution/blob/main/windows_python_for_x68k.md)
